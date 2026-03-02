@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{ 
+    padding: 50px;
+
+}
+
+
+body {
+  background-image: url('imagem1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: linear-gradient(rgba(0, 0, 0, 0.5),
+   rgba(0, 0, 0, 0.5));
+   opacity: 1.5;
+}
+
+.conteudo{
+    display: block;
+    text-align: center;
+    margin-top: 130px;
+    
+}
+.botao{
+    border: 3px solid #2f3542;
+    padding: 15px;
+    background: #bcc6d2;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    color: #FFD;
+    text-shadow: 
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000;
+}
+.botao:hover{
+    background: #aaa69d;
+    
+}
+h1{
+    text-align: center;
+    display: center;
+    margin-top: 200px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 36px;
+    color: #FFD54F;
+    text-shadow: 
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000;
+    
+}
+
+p{
+    text-align: center;
+    display: center;
+    margin-top: 120px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    color: #fecc29;
+    text-shadow: 
+    2px 2px 0 #000,
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000;
+}
+
