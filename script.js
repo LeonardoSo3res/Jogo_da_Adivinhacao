@@ -1,7 +1,7 @@
 const somAcerto = new Audio("somAcerto.mp3");
 const somErro = new Audio("somErro.mp3");
 const somDerrota = new Audio("fimdejogo.mp3");
-const musica = new Audio("musica.mp3"); // música de fundo
+const musica = new Audio("musica.mp3");
 
 const form = document.getElementById('formulario');
 
@@ -44,28 +44,30 @@ function adivinhar(event) {
     );
 
     if (palpite === numeroSecreto) {
-
       somAcerto.pause();
       somAcerto.currentTime = 0;
       somAcerto.play();
-
       alert('🎉 Você acertou!');
       return;
 
     } else {
+      somErro.pause();
+      somErro.currentTime = 0;
+      somErro.play();
 
       tentativas--;
 
       if (tentativas > 0) {
-
-        somErro.pause();
-        somErro.currentTime = 0;
-        somErro.play(); 
-             
+                   
         if (palpite > numeroSecreto) {
           alert('❌ Você errou! O número secreto é MENOR.');
         } else {
           alert('❌ Você errou! O número secreto é MAIOR.');
+
+        somErro.pause();
+        somErro.currentTime = 0;
+        somErro.play(); 
+
         }
 
       } else {
@@ -74,7 +76,6 @@ function adivinhar(event) {
         somDerrota.pause();
         somDerrota.currentTime = 0;
         somDerrota.play();
-
         return; // encerra o jogo
       }
     }
